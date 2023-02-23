@@ -4,10 +4,10 @@
 
 ## Python
 
--Ejercicios del pair programming realizados con algunas dudas
+-Ejercicios del pair programming realizados, con algunas dudas.
 -
 
 ## Sql workbench
 
--Base de datos Northwind explorado
+-Base de datos Northwind explorada.
 -
