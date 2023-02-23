@@ -2,6 +2,10 @@
 
 # 23/02/2023
 
+## Python
+
+-
+
 ## Sql workbench
 
 -Base de datos Northwind explorado
