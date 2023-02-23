@@ -4,6 +4,7 @@
 
 ## Python
 
+-Ejercicios del pair programming realizados con algunas dudas
 -
 
 ## Sql workbench
