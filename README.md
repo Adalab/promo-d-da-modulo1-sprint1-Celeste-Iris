@@ -3,9 +3,11 @@
 ## Python
 
 -Variables
+
 -Listas
 
 ## Sql workbench
 
 -Northwind
+
 -Creación tablas
