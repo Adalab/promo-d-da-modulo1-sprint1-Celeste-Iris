@@ -10,4 +10,4 @@
 
 -Northwind
 
--Creación tablas (falta por subir)
+-Creación tablas
