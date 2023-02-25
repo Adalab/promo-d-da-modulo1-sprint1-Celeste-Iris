@@ -4,7 +4,7 @@
 
 -Variables
 
--Listas (falta por subir)
+-Listas 1
 
 ## Sql workbench
 
