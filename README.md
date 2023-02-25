@@ -4,10 +4,10 @@
 
 -Variables
 
--Listas
+-Listas (falta por subir)
 
 ## Sql workbench
 
 -Northwind
 
--Creación tablas
+-Creación tablas (falta por subir)
