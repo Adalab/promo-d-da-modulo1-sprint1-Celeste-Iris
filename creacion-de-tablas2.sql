@@ -38,7 +38,7 @@ CREATE TABLE facturas (
         REFERENCES zapatilla (id_zapatilla) ON DELETE CASCADE ON UPDATE CASCADE,
 	CONSTRAINT `fk_factura_empleado`
 		FOREIGN KEY (id_empleado)
-        REFERENCES empleado (id_empleado) ON DELETE CASCADE ON UPDATE CASCADE);
+        REFERENCES empleados (id_empleado) ON DELETE CASCADE ON UPDATE CASCADE);
         
         
         
