@@ -18,6 +18,11 @@ INSERT INTO empleados (nombre, tienda, salario, fecha_incorporacion)
 INSERT INTO clientes (nombre, numero_telefono, email, direccion, ciudad, provincia, codigo_postal)
      VALUES ('Monica', 1234567289, 'monica@email.com', 'Calle Felicidad', 'Móstoles', 'Madrid', 28176), ('Lorena', 289345678, 'lorena@email.com', 'Calle Alegría', 'Barcelona', 'Barcelona', 12346), ('Carmen', 298463759, 'carmen@email.com', 'Calle del Color', 'Vigo', 'Pontevedra', 23456);
      
+INSERT INTO facturas (numero_factura, fecha, id_zapatilla, id_empleado, id_cliente, total)
+	 VALUES (123, '2001/12/11', 1, 2, 1, 54.98), 
+            (1234, '2005/05/23', 1, 1, 3, 89.91), 
+            (12345, '2015/09/18', 2, 3, 3, 76.23);
+     
 # De nuevo nos hemos dado cuenta que hay algunos errores en la inserción de datos. En este ejercicios los actualizaremos para que nuestra BBDD este perfectita.
 # Tabla zapatillas
 # En nuestra tienda no vendemos zapatillas Rosas... ¿Cómo es posible que tengamos zapatillas de color rosa? En realidad esas zapatillas son amarillas.
@@ -32,7 +37,6 @@ WHERE id_zapatilla = 2;
 UPDATE empleados
 SET tienda = 'A Coruña'
 WHERE id_empleado = 1;
-
 # Tabla clientes
 # El Numero de telefono de Monica esta mal!!! Metimos un digito de más. En realidad su número es: 123456728
 
@@ -42,7 +46,6 @@ WHERE id_cliente = 1;
 
 # Tabla facturas
 # El total de la factura de la zapatilla cuyo id es 2 es incorrecto. En realidad es: 89,91
-
 
 UPDATE facturas
 SET total = 89.91
