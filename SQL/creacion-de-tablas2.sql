@@ -30,18 +30,18 @@ CREATE TABLE facturas (
     id_empleado INT NOT NULL,
     id_cliente INT NOT NULL,
     PRIMARY KEY (id_factura),
-    CONSTRAINT `fk_zapatilla_facturas`
+    CONSTRAINT `fk_facturas_clientes`
+		FOREIGN KEY (id_cliente)
+        REFERENCES clientes (id_cliente) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT `fk_facturas_zapatilla`
 		FOREIGN KEY (id_zapatilla)
         REFERENCES zapatilla (id_zapatilla) ON DELETE CASCADE ON UPDATE CASCADE,
-	CONSTRAINT `fk_empleados_facturas`
+	CONSTRAINT `fk_factura_empleado`
 		FOREIGN KEY (id_empleado)
-        REFERENCES empleados (id_empleado) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT `fk_clientes_facturas`
-		FOREIGN KEY (id_cliente)
-        REFERENCES clientes (id_cliente) ON DELETE CASCADE ON UPDATE CASCADE);
+        REFERENCES empleado (id_empleado) ON DELETE CASCADE ON UPDATE CASCADE);
         
-        
-        
+   ALTER TABLE zapatilla ADD COLUMN marca VARCHAR(45) NOT NULL;
+
         
         
         
